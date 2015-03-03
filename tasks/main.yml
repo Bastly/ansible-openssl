@@ -10,4 +10,4 @@
   command:  cp {{logstash_ssl_certificate_file}} {{logstash_ssl_key_file}} {{logstash_ssl_dir}}  chdir=/tmp creates={{logstash_ssl_dir}}/{{logstash_ssl_key_file}}
 
 - name: Shere pub key with vagrant   
-  command:  cp {{logstash_ssl_certificate_file}} /vagrant/sharedKeys  chdir={{logstash_ssl_dir}} 
+  command:  cp {{logstash_ssl_certificate_file}} /vagrant2/sharedKeys  chdir={{logstash_ssl_dir}} 
